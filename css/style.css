@@ -33,6 +33,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0.5rem 0;
+}
+
 img {
   width: 100%;
 }
@@ -167,6 +171,12 @@ h6 {
   padding: 3rem;
 }
 
+.list li {
+  width: 90%;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #555;
+}
+
 /* Navigation */
 #main-nav {
   position: sticky;
@@ -213,6 +223,10 @@ h6 {
 #main-nav .social i {
   color: #777;
   margin-right: 0.5rem;
+}
+
+#main-nav .social i:hover {
+  color: var(--primary-color);
 }
 
 /* Showcase */
@@ -268,4 +282,47 @@ h6 {
 
 #home-articles .articles-container > *:last-child {
   grid-column: 2 / span 2;
+}
+
+/* Footer */
+#main-footer {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .list li a:hover {
+  color: var(--primary-color);
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  grid-column: 1 / span 4;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: #444;
+  padding: 0.5rem;
+}
+
+#main-footer .footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
+  cursor: pointer;
 }
