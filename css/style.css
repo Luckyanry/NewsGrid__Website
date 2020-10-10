@@ -177,6 +177,18 @@ h6 {
   border-bottom: 1px dotted #555;
 }
 
+/* Inner Page Grid Container */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1rem;
+  margin: 2rem 0;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
 /* Navigation */
 #main-nav {
   position: sticky;
